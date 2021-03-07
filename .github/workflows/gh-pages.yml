@@ -1,0 +1,36 @@
+name: Deploy on gh-pages
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  NODE_VERSION: '12.x'
+
+jobs:
+  build-and-deploy:
+    name: Build and Release
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
+    - name: Use Node.js ${{ env.NODE_VERSION }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+    - name: Install Packages
+      run: npm install
+    - name: Build App
+      run: npm run build
+      env:
+        # React will fail CI if there is any warning
+        CI: false
+        PUBLIC_URL: "/syllabus-CE/"
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
+        publish_branch: gh-pages
