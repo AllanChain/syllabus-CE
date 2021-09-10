@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c10cf441a21fdc0b1da0294217a01710",
+    "revision": "99d357ac709724ce57c2a8402205be5c",
     "url": "/syllabus-CE/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/syllabus-CE/static/css/2.ecb1e7a4.chunk.css"
   },
   {
-    "revision": "e420637b328e7d56bb19",
+    "revision": "39520df06138c6f31295",
     "url": "/syllabus-CE/static/css/main.a696a8bd.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/syllabus-CE/static/js/2.007ea7e6.chunk.js"
   },
   {
-    "revision": "e420637b328e7d56bb19",
-    "url": "/syllabus-CE/static/js/main.8b50af30.chunk.js"
+    "revision": "39520df06138c6f31295",
+    "url": "/syllabus-CE/static/js/main.f88c0ee4.chunk.js"
   },
   {
     "revision": "a534bdcb6835af5717cd",
